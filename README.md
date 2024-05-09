@@ -8,10 +8,27 @@ If you want follow our workshop, you'll need
 
 - [Nodejs](https://nodejs.org/en/download)
 - npm and npx, both are included in NodeJS
+- some IDE or Code Editor, we'll use [VSC](https://code.visualstudio.com/Download)
 
 Optional installation
 
 - [yarn](https://yarnpkg.com/getting-started/install)
+
+## Optional requirements
+
+for an e2e experience you'll need
+
+- A Github account.
+- A Github's personal access token. check more about it [here](https://docs.github.com/en/enterprise-server@3.9/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+
+Set your personal access token in `./app-config.local.yaml`
+
+```yml
+integrations:
+  github:
+    - host: github.com
+      token: your_personal_access_token_goes_here
+```
 
 ## What do you must know?
 
@@ -23,3 +40,10 @@ Its very easy, but, we'll use yaml sintax. Check this [link](https://onthedock.g
 yarn install
 yarn dev
 ```
+> The last command opens the app in [localhost:3000](http://localhost:3000)
+
+## Speakers Contact
+
+- Pablo Fernandez => [LinkedIn](https://www.linkedin.com/in/pablo-fernandez-3985578b)
+- Franco Balsamo => [LinkedIn](https://www.linkedin.com/in/fjbalsamo)
+

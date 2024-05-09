@@ -128,31 +128,13 @@ spec:
       name: Fetch Base
       action: fetch:template
       input:
-        url: ./template/common
+        url: ./template
         values:
           name: ${{ parameters.name }}
-          lang: ${{ parameters.lang }}
-          dynamo: ${{ parameters.dynamo }}
+          description: ${{ parameters.description }}
+          motorSport: ${{ parameters.motorSport }}
+          driver: ${{ parameters.driver }}
     
-    - id: fetch-js-base
-      name: Conditional Fetch Base for NodeJS
-      action: fetch:template
-      if: ${{ parameters.lang == 'js' }}
-      input:
-        url: ./template/js
-        values:
-          name: ${{ parameters.name }}
-          lang: ${{ parameters.lang }}
-    
-    - id: fetch-py-base
-      name: Conditional Fetch Base for Python
-      action: fetch:template
-      if: ${{ parameters.lang == 'python' }}
-      input:
-        url: ./template/python
-        values:
-          name: ${{ parameters.name }}
-          lang: ${{ parameters.lang }}
 
     # This step publishes the contents of the working directory to GitHub.
     - id: publish

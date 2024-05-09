@@ -12,6 +12,12 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: guests
+  title: Tech4Impact Team
+  links:
+    - url: https://www.linkedin.com/in/pablo-fernandez-3985578b
+      title: Pablo
+    - url: https://www.linkedin.com/in/fjbalsamo
+      title: Franco
 spec:
   type: team
   children: []
