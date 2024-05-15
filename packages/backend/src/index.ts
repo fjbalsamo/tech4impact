@@ -33,6 +33,8 @@ backend.add(
   import('@backstage/plugin-permission-backend-module-allow-all-policy'),
 );
 
+backend.add(import('@backstage/plugin-scaffolder-backend-module-github'));
+
 // search plugin
 backend.add(import('@backstage/plugin-search-backend/alpha'));
 backend.add(import('@backstage/plugin-search-backend-module-catalog/alpha'));
