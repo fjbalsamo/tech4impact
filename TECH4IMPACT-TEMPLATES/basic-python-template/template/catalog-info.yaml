@@ -6,4 +6,5 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: group:nx.tech.tech-4-impact
+  owner: group:guest
+  system: examples
